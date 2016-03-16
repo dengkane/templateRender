@@ -1,0 +1,6 @@
+2016/03/16 17:59:08 [error] 24638#0: *1 lua entry thread aborted: runtime error: [string "context=... or {}..."]:7: attempt to call field 'concat' (a nil value)
+stack traceback:
+coroutine 0:
+	[string "context=... or {}..."]: in function 't'
+	./lua/templateRenderApi.lua:34: in function <./lua/templateRenderApi.lua:1>, client: 127.0.0.1, server: , request: "GET /templateRender/templateRenderApi?templateStr=select%20*%20from%20{{table}}&templateValues={%22table%22:%22t1%22} HTTP/1.1", host: "localhost:6699"
+2016/03/16 17:59:08 [error] 24638#0: *2 open() "./html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:6699", referrer: "http://localhost:6699/templateRender/templateRenderApi?templateStr=select%20*%20from%20{{table}}&templateValues={%22table%22:%22t1%22}"
